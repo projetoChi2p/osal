@@ -190,6 +190,7 @@ int32 OS_FileSys_Initialize(char *address, const char *fsdevname, const char *fs
             {
                 return_code = OS_FileSysFormatVolume_Impl(&token);
             }
+            OS_DEBUG("%d\n", return_code);
 
             if (return_code == OS_SUCCESS)
             {
